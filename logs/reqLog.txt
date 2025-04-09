@@ -1,0 +1,12 @@
+09042025	20:15:11	623503a8-9075-4f7e-ab24-3554e2211913	GET / undefined
+09042025	20:20:35	ffcc98e2-23ac-4d04-833c-fe1fc65b1c60	GET / undefined
+09042025	20:21:06	75b66f86-747a-408f-b116-49d508146ccd	GET /subdir undefined
+09042025	20:21:13	92ff48b3-13bb-4a8d-88ea-e030f28debc9	GET /subdir undefined
+09042025	20:21:25	873e9f1e-9ac0-43f1-9057-dcaf16e3d158	GET /new-page undefined
+09042025	20:21:34	c89ba710-65ac-45d7-b38a-cffa5a4e7b65	GET /old-page undefined
+09042025	20:21:34	7c1f9daf-3494-4294-a1bd-22240e1a9159	GET /E:/html/nodeDemo/views/new-page.html undefined
+09042025	20:21:44	ddd690e1-98ef-458c-b9d2-a305860ff292	GET /data undefined
+09042025	20:21:55	80fe9162-05ca-4b29-9e1b-2ccd455735de	GET /data/data.json undefined
+09042025	20:22:14	98c113b0-db13-4aa4-919c-1ecd0de11d12	GET / undefined
+09042025	20:23:05	29a39baf-017c-485d-b3a1-6f847ad66fec	GET / undefined
+09042025	20:23:13	3c46b6fe-99a9-4e5e-acb1-1a2b1b3c1e3e	GET / undefined

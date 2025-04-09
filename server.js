@@ -22,22 +22,16 @@ app.use('/subdir',require('./routes/subdir'))
 
 //3rd-party middleware
 const whiteList = ['www.salex.com','https://www.google.com'] 
-
 const corsOptions = {
   origin:(origin,callback)=>{
-    if(whiteList.indexOf(origin)!==-1 || !origin){
+    if(whiteList.indexOf(origin)!==-1 || !origin)
       callback(null,true)
-    }
-    else{
+    else
       callback(new Error('Not Allowed By CORS'))
-    }
   },
   optionsSuccessStatus:200
 }
-
 app.use(cors(corsOptions))
-
-
 
 app.use(errorHandler)
 
@@ -51,11 +45,4 @@ app.all(/\/*/,(req,res)=>{
     res.type('txt').send("404 Not Found")
 }) 
 
-
 app.listen(port, () => console.log(`server running on http://localhost:${port}`));
-
-/**
- * Router
- *  - Sub app
- *  - mini express app for managing specific sets of routes and middleware
- */

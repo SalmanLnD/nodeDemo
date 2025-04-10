@@ -1,3 +1,5 @@
 08042025	22:06:27	70e1b87d-93cc-46a7-90d6-03dc17492314	Error Not Allowed By CORS
 09042025	21:03:33	79a6f01d-de7e-4cb4-9986-05f29aa30bcb	Error ENOENT: no such file or directory, stat 'E:\html\nodeDemo\routes\views\index.html'
 09042025	21:03:33	46e4fa28-3ce3-446b-a123-445f0ca554ff	Error ENOENT: no such file or directory, stat 'E:\html\nodeDemo\routes\views\index.html'
+10042025	20:54:41	49627161-92fb-4c24-b13f-0eccaf994eb1	TypeError Cannot set properties of undefined (setting 'firstname')
+10042025	20:55:29	0edd043f-2a99-4295-b273-acdac5edc388	TypeError Cannot set properties of undefined (setting 'firstname')

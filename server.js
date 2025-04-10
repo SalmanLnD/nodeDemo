@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const {logger} = require('./middleware/LogEvents')
 const cors = require('cors')
+const corsOptions = require('./config/corsOptions')
 const errorHandler = require('./middleware/errHandler')
 
 const app = express();
@@ -11,26 +12,15 @@ const port = process.env.PORT||3000;
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 app.use('/',express.static(path.join(__dirname,'/public')))
-app.use('/subdir',express.static(path.join(__dirname,'/public')))
 
 //custom middleware
 app.use(logger)
 
 // routes
 app.use('/',require('./routes/root'))
-app.use('/subdir',require('./routes/subdir'))
+app.use('/employees',require('./routes/api/employees'))
 
 //3rd-party middleware
-const whiteList = ['www.salex.com','https://www.google.com'] 
-const corsOptions = {
-  origin:(origin,callback)=>{
-    if(whiteList.indexOf(origin)!==-1 || !origin)
-      callback(null,true)
-    else
-      callback(new Error('Not Allowed By CORS'))
-  },
-  optionsSuccessStatus:200
-}
 app.use(cors(corsOptions))
 
 app.use(errorHandler)

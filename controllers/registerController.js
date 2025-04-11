@@ -2,11 +2,9 @@ const usersDB = {
     users:require('../models/users.json'),
     setUsers: function(data){this.users=data}
 }
-
 const fsPromises = require('fs').promises
 const path = require('path')
 const bcrypt = require('bcryptjs')
-
 const handleNewUser = async(req,res)=>{
     const {username,password} = req.body
     if(!username || !password)
@@ -24,5 +22,4 @@ const handleNewUser = async(req,res)=>{
         res.status(500).json({message:error.message})
     }
 }
-
 module.exports = {handleNewUser}

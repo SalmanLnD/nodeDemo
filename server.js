@@ -20,6 +20,7 @@ app.use(logger)
 app.use('/',require('./routes/root'))
 app.use('/employees',require('./routes/api/employees'))
 app.use('/register',require('./routes/register'))
+app.use('/auth',require('./routes/auth'))
 
 //3rd-party middleware
 app.use(cors(corsOptions))

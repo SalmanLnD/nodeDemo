@@ -1,4 +1,4 @@
-const whiteList = ['www.salex.com','https://www.google.com'] 
+const allowedOrigins = require('./allowedOrigins')
 const corsOptions = {
   origin:(origin,callback)=>{
     if(whiteList.indexOf(origin)!==-1 || !origin)

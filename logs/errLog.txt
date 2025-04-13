@@ -8,3 +8,4 @@
 11042025	21:26:53	42ef80a9-ace4-4b76-a3e1-1c2eb0a9e95a	ReferenceError sendStatus is not defined
 11042025	21:34:39	4e4cf264-5302-4e24-a9d3-0c701854be48	TypeError cookies.log is not a function
 11042025	21:35:13	f0159d30-0b50-45b8-b75d-4d2fa10c368e	ReferenceError REFRESH_TOKEN_SECRET is not defined
+11042025	22:35:43	bb30a555-db61-4c1f-9743-7cd950f1b8f2	Error Cannot set headers after they are sent to the client
